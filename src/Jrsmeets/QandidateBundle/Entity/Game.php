@@ -9,6 +9,10 @@ use Doctrine\ORM\Mapping as ORM;
  */
 class Game
 {
+    const STATUS_BUSY = 0;
+    const STATUS_FAILED = 1;
+    const STATUS_SUCCESS = 2;
+
     /**
      * @var integer
      */
@@ -192,4 +196,6 @@ class Game
     {
         return $this->status;
     }
+
+    
 }
