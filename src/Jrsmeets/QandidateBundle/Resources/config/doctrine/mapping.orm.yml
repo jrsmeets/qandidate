@@ -1,0 +1,26 @@
+Jrsmeets\QandidateBundle\Entity\Game:
+    type: entity
+    table: game
+    id:
+        id:
+            type: integer
+            generator: { strategy: AUTO }
+    fields:
+        word:
+            type: string
+            length: 32
+        triesLeft:
+            type: integer
+            column: tries_left
+        guessed:
+            type: string
+            length: 255
+        createTime:
+            type: integer
+            column: create_time
+        createIp:
+            type: string
+            length: 32
+            column: create_ip
+        status:
+            type: smallint

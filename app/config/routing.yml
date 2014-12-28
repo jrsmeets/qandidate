@@ -1,0 +1,4 @@
+jrsmeets_quandidate:
+    resource: "@JrsmeetsQuandidateBundle/Controller/"
+    type:     annotation
+    prefix:   /
